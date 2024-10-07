@@ -4,6 +4,9 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import DieuKhoan from "./conponents/DieuKhoan";
+import ChinhSachBaoMat from "./conponents/ChinhSachBaoMat";
+import BanQuyen from "./conponents/BanQuyen";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -13,6 +16,9 @@ const router = createBrowserRouter([
         path: "/about",
         element: <div>Nghĩa</div>,
       },
+      { path: "/dieukhoan", element: <DieuKhoan /> },
+      { path: "/chinhsachbaomat", element: <ChinhSachBaoMat /> },
+      { path: "/banquyen", element: <BanQuyen /> },
     ],
   },
 ]);

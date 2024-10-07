@@ -1,11 +1,13 @@
-import "./App.css";
 import { Outlet } from "react-router-dom";
+import Nav from "./conponents/Nav";
+import Footer from "./conponents/Footer";
 
 function App() {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
+    <div className="lg:w-[1090px] lg:mx-auto w-full">
+      <Nav />
       <Outlet />
+      <Footer />
     </div>
   );
 }
